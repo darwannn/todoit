@@ -1,0 +1,59 @@
+:root {
+  --bg-gray-100: #f7fafc;
+  --bg-gray-200: #edf2f7;
+  --bg-gray-300: #e2e8f0;
+  --bg-gray-400: #cbd5e0;
+  --bg-gray-500: #a0aec0;
+  --bg-gray-600: #718096;
+  --bg-gray-700: #4a5568;
+  --bg-gray-800: #2d3748;
+  --bg-gray-900: #1a202c;
+}
+
+.fc-toolbar-title,
+.fc-today-button,
+.fc-next-button,
+.fc-prev-button {
+  all: unset !important  ;
+}
+
+.fc-toolbar-title {
+  font-weight: bold !important;
+  font-size: 2rem !important;
+  color: var(--bg-gray-800) !important;
+}
+
+.fc-today-button {
+  visibility: hidden !important;
+}
+
+.fc-today-button::after {
+  content: "Today";
+  visibility: visible !important;
+  font-weight: 700 !important;
+}
+
+.fc-today-button,
+.fc-next-button,
+.fc-prev-button {
+  /* border: 2px solid var(--bg-gray-300) !important;
+  border-radius: 6px !important;
+  padding: 10px 10px !important;
+  margin: 3px !important;
+  color: var(--bg-gray-600) !important;
+  font-weight: 600 !important; */
+  transition: all 0.3s !important;
+  border: 0px solid var(--bg-gray-300) !important;
+  color: var(--bg-gray-700) !important;
+}
+.fc-today-button:hover,
+.fc-next-button:hover,
+.fc-prev-button:hover {
+  color: var(--bg-gray-800) !important;
+
+  cursor: pointer !important;
+}
+
+.fc-today-button {
+  padding: 10px 30px !important;
+}
