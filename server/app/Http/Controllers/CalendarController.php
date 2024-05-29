@@ -13,6 +13,7 @@ class CalendarController extends Controller
 
         $today =  Task::with(['tags', 'user', 'subtask', 'category'])->where('user_id', auth()->user()->id)->where('is_completed', false)->whereDate('due_at', now())->count();
         $upcoming =  Task::with(['tags', 'user', 'subtask', 'category'])->where('user_id', auth()->user()->id)->where('is_completed', false)->whereDate('due_at', '>', now())->count();
-        return Response::success(["tasks" => ['upcoming' => $upcoming, 'today' => $today]], null, 200);
+        $all = Task::with(['tags', 'user', 'subtask', 'category'])->where('user_id', auth()->user()->id)->where('is_completed', false)->count();
+        return Response::success(["tasks" => ['all' => $all, 'upcoming' => $upcoming, 'today' => $today]], null, 200);
     }
 }

@@ -26,7 +26,7 @@
                                 <tr>
                                     <td style='color:black!important; font-size: 14px;'>
                                       
-                                        You have
+                                        This is a friendly reminder that you have
                                         <span className="font-bold">{{ $data['task_count'] }}</span>
                                         task{{ $data['task_count'] > 1 ? "s" : "" }} due today.
                                     </td>
@@ -38,7 +38,11 @@
                                         </a></button>
                                     </td>
                                 </tr>
-                              
+                                <tr>
+                                    <td style='color:black!important; font-size: 14px;'>
+                                        Please ensure that these tasks are completed by the specified deadlines. Timely completion is crucial as it helps maintain workflow efficiency and ensures that any subsequent steps dependent on these tasks can proceed without delay.
+                                    </td>
+                                </tr>
                                
                             </table>
                         </td>

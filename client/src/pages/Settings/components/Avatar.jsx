@@ -72,7 +72,7 @@ const Avatar = ({ user }) => {
 
   return (
     <>
-      <div className="relative w-40 z-30">
+      <div className="relative w-40 z-10">
         <div className="relative w-40 h-40 overflow-hidden rounded-full  border">
           <input
             type="file"

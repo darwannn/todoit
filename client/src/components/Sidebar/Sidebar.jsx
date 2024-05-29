@@ -130,8 +130,7 @@ const Sidebar = () => {
                               Calendar
                             </span>
                             <span className="flex items-center justify-center px-2 text-sm text-gray-700 bg-gray-200 rounded-md font-medium">
-                              {count?.data?.tasks?.upcoming +
-                                count?.data?.tasks?.today || 0}
+                              {count?.data?.tasks?.all || 0}
                             </span>
                           </>
                         )}
